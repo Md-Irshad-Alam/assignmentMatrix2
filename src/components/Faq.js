@@ -1,112 +1,35 @@
 import GroupContainer from './GroupContainer';
 import Phase2Container from './Phase2Container';
 import FilterFormContainer from './FilterFormContainer';
-import style from '../Styles/Faq.module.css';
+import style from '../Styles/navbar.module.css';
+import '../Styles/common.css';
+import Headerpart from './Headerpart';
+import Navbar from './Navbar';
+import Idoevent from './Idoevent';
 const Faq = () => {
   return (
-    <div className='absolute top-[0rem] left-[0rem] bg-gray-400 w-[94.5rem] h-[318.375rem] overflow-hidden text-left text-[1.25rem] text-white font-zcool-kuaile'>
+    <div className='absolute top-[0rem] left-[0rem] bg-gray-400 w-[100%] h-[318.375rem] overflow-hidden text-left text-[1.25rem] text-white font-zcool-kuaile'>
       <img
-        className='absolute top-[0rem] left-[0rem] w-[94.5rem] h-[36.75rem] object-cover'
+        className='absolute top-[0rem] left-[0rem] w-full h-[36.75rem] object-cover'
         alt=''
         src='/rectangle-18@2x.png'
       />
-      <div
-        className={`absolute top-[3.5rem] left-[12.375rem] text-[2rem] text-center ${style.navbar}`}
-      >
-        Saviour
-      </div>
-      <div
-        id={style.navtab}
-        className='absolute top-[2.875rem] left-[calc(50%_-_258px)] rounded-xl bg-gray-100 w-[36.438rem] flex flex-row items-start justify-start py-[1rem] px-[1.5rem] box-border gap-[0rem_1.5rem] text-cente'
-      >
-        <div className='relative z-[0]'>Home</div>
-        <div className='relative z-[1]'>IDO</div>
-        <div className='relative z-[2]'>Tokenomics</div>
-        <div className='relative z-[3]'>Roadmap</div>
-        <div className='relative z-[4]'>Coming Soon</div>
-        <img
-          className='w-[1rem] absolute !m-[0] top-[1.25rem] left-[34.063rem] h-[1rem] overflow-hidden shrink-0 z-[5]'
-          alt=''
-          src='/eparrowdownbold.svg'
-        />
-      </div>
-      <div className='absolute top-[3.375rem] left-[81rem] rounded-[15.44px] [background:linear-gradient(93.73deg,_#ed0137_20.07%,_#f05734_75.59%)] w-[7.938rem] h-[2.375rem] overflow-hidden text-[0.75rem] font-poppins'>
-        <div className='absolute top-[0.625rem] left-[1rem] font-semibold'>
-          Connect Wallet
-        </div>
-      </div>
+      <Navbar />
       <img
-        className='absolute top-[75.625rem] left-[0rem] w-[94.5rem] h-[71.563rem] object-cover opacity-[0.71]'
+        className='absolute top-[75.625rem] left-[0rem] w-full h-[71.563rem] object-cover opacity-[0.71]'
         alt=''
         src='/rectangle-19@2x.png'
       />
-      <div className='absolute top-[17.25rem] left-[7.688rem] text-[2.813rem] leading-[119%] font-shojumaru text-snow-300 text-center inline-block w-[78.875rem]'>
+      <div className='  absolute top-[17.25rem] left-[7.688rem] text-[2.813rem] leading-[119%] font-shojumaru text-snow-300 text-center inline-block w-[80%] m-auto'>
         Where Blockchain Heroes Thrive, Rescuing Dreams, Elevating Fortunes.
       </div>
-      <div className='absolute top-[47.063rem] left-[10.375rem] text-[1.5rem] leading-[119%] inline-block w-[36.688rem] h-[12.938rem] text-snow-100'>
-        <p className='m-0'>{`We've all been in the mud once, and now we've decided to fight it out. `}</p>
-        <p className='m-0'>{`Pay tribute to those pioneers of WEB3 and the warriors who dedicated their love to the blockchain. Save the lucky ones alive, join us to save the future! `}</p>
-        <p className='m-0'>{`Our mission is to empower everyone to share wealth and succeed. `}</p>
-        <p className='m-0 text-snow-400'>read more...</p>
-        <p className='m-0'>&nbsp;</p>
-      </div>
-      <div className='absolute top-[42.313rem] left-[10.188rem] text-[2.75rem] leading-[119%] font-shojumaru text-crimson inline-block w-[24.313rem]'>
-        Introduction
-      </div>
-      <img
-        className='absolute top-[31.938rem] left-[45.188rem] w-[49.688rem] h-[49.688rem] object-cover'
-        alt=''
-        src='/brick-matrix-generate-a-logo-concept-that-visually-represents-t-9df3d56e2aaa42b8add901ba1b656499-2@2x.png'
-      />
-      <img
-        className='absolute top-[1.688rem] left-[5.5rem] w-[6.625rem] h-[7.313rem] object-cover'
-        alt=''
-        src='/logo-savior-red-copy-1@2x.png'
-      />
-      <div className='absolute top-[65.5rem] left-[10.375rem] rounded-[21.92px] [background:linear-gradient(93.73deg,_#d51b46_11.92%,_#ee6910_83.65%)] overflow-hidden flex flex-row items-center justify-center py-[1.065rem] px-[1.331rem] gap-[0rem_0.709rem]'>
-        <div className='relative'>Documents</div>
-        <img
-          className='w-[1rem] relative h-[1rem] overflow-hidden shrink-0'
-          alt=''
-          src='/eparrowdownbold1.svg'
-        />
-      </div>
-      <div className='absolute top-[90.063rem] left-[calc(50%_-_79px)] rounded-xl w-[44.25rem] h-[46.125rem] text-[1.5rem] text-whitesmoke-300'>
-        <div className='absolute top-[0rem] left-[calc(50%_-_354px)] rounded-xl bg-gray-500 box-border w-[44.25rem] h-[46.125rem] border-[1.5px] border-solid border-orangered' />
-        <div className='absolute top-[4.5rem] left-[12.375rem] text-[3rem] font-shojumaru text-crimson'>
-          PRESALE 1
-        </div>
-        <div className='absolute top-[10.5rem] left-[10.625rem] text-[2rem] text-whitesmoke-200'>
-          1 Saviour = 0.657 USDT
-        </div>
-        <div className='absolute top-[15rem] left-[10.375rem]'>
-          Next Stage Price = 0.723 USDT
-        </div>
-        <div className='absolute top-[19rem] left-[8.438rem]'>
-          Sold - $34,56,56,764/$50,00,00,000
-        </div>
-        <div className='absolute top-[23rem] left-[7.5rem]'>
-          Raised - $34,56,56,764/$40,00,00,000
-        </div>
-        <div className='absolute top-[28rem] left-[8.75rem] text-[1rem] text-whitesmoke-400 opacity-[0.52]'>
-          Enter the amount (BNB)
-        </div>
-        <div className='absolute top-[32.188rem] left-[8.75rem] text-[1rem] text-whitesmoke-400 opacity-[0.52]'>
-          Minimum Quantity to Buy
-        </div>
-        <div className='absolute top-[36.375rem] left-[8.75rem] text-[1rem] text-whitesmoke-400 opacity-[0.52]'>
-          Maximum Quantity of Tokens
-        </div>
-        <div className='absolute top-[26.938rem] left-[7.438rem] rounded-xl box-border w-[29.313rem] h-[3.125rem] border-[1px] border-solid border-firebrick' />
-        <div className='absolute top-[31.125rem] left-[7.5rem] rounded-xl box-border w-[29.313rem] h-[3.125rem] border-[1px] border-solid border-firebrick' />
-        <div className='absolute top-[35.313rem] left-[7.438rem] rounded-xl box-border w-[29.313rem] h-[3.125rem] border-[1px] border-solid border-firebrick' />
-        <div className='absolute top-[40.875rem] left-[14.813rem] rounded-[21.92px] [background:linear-gradient(93.73deg,_#d51b46_11.92%,_#ee6910_83.65%)] overflow-hidden flex flex-row items-center justify-center py-[0.875rem] px-[1.331rem] text-[1.063rem] text-white'>
-          <div className='relative'>Buy</div>
-        </div>
-        <div className='absolute top-[40.875rem] left-[21.438rem] rounded-[21.92px] [background:linear-gradient(93.73deg,_#d51b46_11.92%,_#ee6910_83.65%)] overflow-hidden flex flex-row items-center justify-center py-[0.875rem] px-[1.331rem] text-[1.063rem] text-white'>
-          <div className='relative'>Claim Drop</div>
-        </div>
-      </div>
+
+      {/* introduction */}
+      <Headerpart />
+      {/* introduction end  */}
+
+      {/* fase 1 end */}
+
       <div className='absolute top-[136rem] left-[8.188rem] text-[1rem] text-whitesmoke-400 opacity-[0.52]'>
         Generate a unique referral link
       </div>
@@ -130,15 +53,11 @@ const Faq = () => {
       <div className='absolute top-[240.063rem] left-[calc(50%_+_187px)] text-[2.75rem] leading-[119%] font-shojumaru text-crimson inline-block w-[7.438rem]'>
         FAQ
       </div>
-      <div className='absolute top-[79.5rem] left-[calc(50%_-_412px)] text-[2.556rem] font-shojumaru text-crimson text-center inline-block w-[51.438rem]'>
-        Participate in our IDO Event!
-      </div>
-      <div className='absolute top-[128.5rem] left-[calc(50%_-_684px)] text-[1.75rem] font-shojumaru text-crimson text-center inline-block w-[34.188rem]'>{`Become an affiliate & Earn 7% as Commission!`}</div>
-      <div className='absolute top-[86.563rem] left-[5rem] text-[1.306rem] leading-[174.5%] text-gainsboro text-center inline-block w-[33.688rem]'>
-        During our IDO event, you will gain early access to our revolutionary
-        ecosystem, designed to empower everyone to share wealth and achieve
-        success.
-      </div>
+      {/* participate start  */}
+
+      {/* IDO event start */}
+      <Idoevent />
+
       <div className='absolute top-[135.188rem] left-[29.75rem] rounded-xl bg-crimson w-[6.25rem] h-[2.625rem]' />
       <div className='absolute top-[135.938rem] left-[30.688rem] text-[0.938rem]'>
         Generate
@@ -150,6 +69,9 @@ const Faq = () => {
       />
       <div className='absolute top-[162.5rem] left-[calc(50%_-_666px)] rounded-xl bg-gray-500 box-border w-[25.75rem] h-[19.125rem] border-[1.5px] border-solid border-orangered' />
       <div className='absolute top-[159.938rem] left-[10.5rem] rounded-xl bg-crimson w-[15.25rem] h-[4.375rem]' />
+
+      {/* token info */}
+
       <div className='absolute top-[161.375rem] left-[13.063rem] text-[1.125rem] font-shojumaru'>
         Token Details
       </div>
@@ -171,43 +93,7 @@ const Faq = () => {
       <div className='absolute top-[176.563rem] left-[21.125rem] text-red'>
         18
       </div>
-      <div className='absolute top-[97.644rem] left-[calc(50%_-_605px)] rounded-xl bg-gray-500 box-border w-[25.75rem] h-[23.875rem] border-[1.5px] border-solid border-orangered' />
-      <div className='absolute top-[95rem] left-[14.313rem] rounded-xl bg-crimson w-[15.25rem] h-[4.375rem]' />
-      <div className='absolute top-[96.438rem] left-[18rem] text-[1.125rem] font-shojumaru'>
-        Token Info
-      </div>
-      <div className='absolute top-[105.769rem] left-[13.125rem]'>Soft Cap</div>
-      <div className='absolute top-[115.644rem] left-[13.125rem]'>
-        1st Generation
-      </div>
-      <div className='absolute top-[118.519rem] left-[13.125rem]'>
-        2nd Generation
-      </div>
-      <div className='absolute top-[108.644rem] left-[13.125rem]'>
-        <p className='m-0'>Initial exchange</p>
-        <p className='m-0'>rate</p>
-      </div>
-      <div className='absolute top-[112.769rem] left-[11.75rem]'>
-        Recommended Referral Commission
-      </div>
-      <div className='absolute top-[101.644rem] left-[13.125rem] inline-block w-[11rem]'>
-        Total Token Supply
-      </div>
-      <div className='absolute top-[105.644rem] left-[24.938rem] text-red'>
-        200 BNB
-      </div>
-      <div className='absolute top-[115.519rem] left-[24.938rem] text-red'>
-        5%
-      </div>
-      <div className='absolute top-[118.394rem] left-[24.938rem] text-red'>
-        2%
-      </div>
-      <div className='absolute top-[108.519rem] left-[24.938rem] text-red'>
-        1 BNB
-      </div>
-      <div className='absolute top-[101.519rem] left-[24.938rem] text-red'>
-        20%
-      </div>
+
       <div className='absolute top-[123.813rem] left-[17.875rem] rounded-[16.21px] [background:linear-gradient(93.73deg,_#d51b46_11.92%,_#ee6910_83.65%)] overflow-hidden flex flex-row items-center justify-center py-[0.787rem] px-[0.984rem] text-[0.881rem]'>
         <div className='relative'>Connect Wallet</div>
       </div>
@@ -232,7 +118,7 @@ const Faq = () => {
             <img
               className='w-[14.819rem] relative rounded-[17.56px] h-[21.813rem] overflow-hidden shrink-0 object-cover z-[2]'
               alt=''
-              src='/divwrapper--styledwrappersc1fux03g01@2x.png'
+              src='/divwrapper--styledwrappersc1fux03g0@2x.png'
             />
             <div className='w-full absolute !m-[0] h-full top-[0rem] right-[0rem] bottom-[0rem] left-[0rem] rounded-[13.17px] [background:linear-gradient(180deg,_rgba(0,_0,_0,_0),_rgba(10,_28,_61,_0.2)_70%,_rgba(237,_1,_55,_0.09))] z-[3]' />
             <div className='w-[calc(100%_-_144.2px)] !m-[0] absolute h-[calc(100%_-_222.8px)] top-[12.556rem] right-[7.531rem] bottom-[1.369rem] left-[1.481rem] flex flex-col items-start justify-start gap-[0.823rem_0rem] z-[4]'>
@@ -243,14 +129,14 @@ const Faq = () => {
             </div>
           </div>
           <Phase2Container
-            phaseDescription='/divwrapper--styledwrappersc1fux03g02@2x.png'
+            phaseDescription='/divwrapper--styledwrappersc1fux03g0@2x.png'
             phaseTitle='Phase 3'
             initiativeDescription='Community Building and Marketing'
             propLeft='38.413rem'
             propWidth='12.413rem'
           />
           <Phase2Container
-            phaseDescription='/divwrapper--styledwrappersc1fux03g03@2x.png'
+            phaseDescription='/divwrapper--styledwrappersc1fux03g0@2x.png'
             phaseTitle='Phase 4'
             initiativeDescription='Ecosystem Expansion and Partnerships'
             propLeft='57.625rem'
@@ -278,9 +164,9 @@ const Faq = () => {
           3
         </div>
         <img
-          className='absolute top-[1.75rem] left-[36.5rem] w-[1.5rem] h-[1.5rem] overflow-hidden'
+          className='absolute top-[1.75rem] left-[36.5rem] w-[1.5rem] h-[1.5rem] overflow-hidden bg-white'
           alt=''
-          src='/eparrowdownbold2.svg'
+          src='/down-arrow.svg'
         />
         <div className='absolute top-[5.813rem] left-[0rem] w-[40rem] h-[13.688rem]'>
           <div className='absolute top-[-0.062rem] left-[-0.062rem] rounded-xl bg-gray-200 box-border w-[40.125rem] h-[12.75rem] border-[1px] border-solid border-crimson' />
@@ -291,9 +177,9 @@ const Faq = () => {
             4
           </div>
           <img
-            className='absolute top-[3.25rem] left-[36.5rem] w-[1.5rem] h-[1.5rem] overflow-hidden'
+            className='absolute top-[3.25rem] left-[36.5rem] w-[1.5rem] h-[1.5rem] overflow-hidden bg-white'
             alt=''
-            src='/eparrowdownbold3.svg'
+            src='/down-arrow.svg'
           />
           <div className='absolute top-[5.313rem] left-[2.313rem] rounded-xl bg-whitesmoke-500 w-[35.5rem] h-[5.188rem]' />
           <div className='absolute top-[6.313rem] left-[3.688rem] text-[0.938rem] leading-[170.42%] font-zcool-kuaile text-snow-200 inline-block w-[32.75rem] h-[2.875rem]'>
@@ -369,35 +255,7 @@ const Faq = () => {
           />
         </div>
       </div>
-      <div className='absolute top-[87.375rem] left-[56.25rem] w-[16.375rem] h-[5.056rem] text-[4.044rem] text-platform-aliases-ttulos font-roboto-mono'>
-        <div className='absolute top-[0.05rem] left-[0rem] w-[6.875rem] h-[5.006rem]'>
-          <div className='absolute top-[-0.056rem] left-[-0.056rem] rounded-[3.23px] bg-black box-border w-[3.344rem] h-[5.113rem] overflow-hidden border-[0.9px] border-solid border-crimson'>
-            <b className='absolute top-[1.013rem] left-[0.406rem] flex items-center w-[2.425rem] h-[3.031rem]'>
-              0
-            </b>
-          </div>
-          <div className='absolute top-[-0.056rem] left-[3.588rem] rounded-[3.23px] bg-black box-border w-[3.344rem] h-[5.113rem] overflow-hidden border-[0.9px] border-solid border-crimson'>
-            <b className='absolute top-[0.994rem] left-[0.488rem] flex items-center w-[2.331rem] h-[3.056rem]'>
-              0
-            </b>
-          </div>
-        </div>
-        <b className='absolute top-[0rem] left-[6.95rem] flex text-crimson text-center items-center justify-center w-[2.45rem] h-[5.006rem] [text-shadow:0.9px_0_0_#ed0137,_0_0.9px_0_#ed0137,_-0.9px_0_0_#ed0137,_0_-0.9px_0_#ed0137]'>
-          :
-        </b>
-        <div className='absolute top-[0.05rem] left-[9.5rem] w-[6.875rem] h-[5.006rem]'>
-          <div className='absolute top-[-0.056rem] left-[-0.056rem] rounded-[3.23px] bg-black box-border w-[3.344rem] h-[5.113rem] overflow-hidden border-[0.9px] border-solid border-crimson'>
-            <b className='absolute top-[0.994rem] left-[0.488rem] flex items-center w-[2.331rem] h-[3.056rem]'>
-              0
-            </b>
-          </div>
-          <div className='absolute top-[-0.056rem] left-[3.588rem] rounded-[3.23px] bg-black box-border w-[3.344rem] h-[5.113rem] overflow-hidden border-[0.9px] border-solid border-crimson'>
-            <b className='absolute top-[0.994rem] left-[0.488rem] flex items-center w-[2.331rem] h-[3.056rem]'>
-              0
-            </b>
-          </div>
-        </div>
-      </div>
+
       <img
         className='absolute top-[38.438rem] left-[-764.437rem] w-[6.25rem] h-[6.25rem]'
         alt=''

@@ -1,11 +1,12 @@
-import { useEffect } from "react";
+import { useEffect } from 'react';
 import {
   Routes,
   Route,
   useNavigationType,
   useLocation,
-} from "react-router-dom";
-import MaskGroup from "./pages/MaskGroup";
+} from 'react-router-dom';
+import MaskGroup from './pages/MaskGroup';
+import Test from './components/Test';
 
 function App() {
   const action = useNavigationType();
@@ -13,19 +14,19 @@ function App() {
   const pathname = location.pathname;
 
   useEffect(() => {
-    if (action !== "POP") {
+    if (action !== 'POP') {
       window.scrollTo(0, 0);
     }
   }, [action, pathname]);
 
   useEffect(() => {
-    let title = "";
-    let metaDescription = "";
+    let title = '';
+    let metaDescription = '';
 
     switch (pathname) {
-      case "/":
-        title = "";
-        metaDescription = "";
+      case '/':
+        title = '';
+        metaDescription = '';
         break;
     }
 
@@ -45,7 +46,8 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<MaskGroup />} />
+      <Route path='/' element={<MaskGroup />} />
+      {/* <Route path='/' element={<Test />} /> */}
     </Routes>
   );
 }
